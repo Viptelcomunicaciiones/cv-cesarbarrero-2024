@@ -1,0 +1,564 @@
+/* General */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada del texto. */
+    margin: 0; /* Elimina los márgenes alrededor de la página. */
+    padding: 0; /* Elimina los rellenos alrededor de la página. */
+    background-color: #f0f8ff; /* Fondo azul claro para toda la página. */
+    color: #002147; /* Texto azul oscuro para facilitar la lectura. */
+}
+
+/* Encabezado */
+header {
+    background-color: #003366; /* Fondo azul fuerte para el encabezado. */
+    color: #ffffff; /* Texto blanco para contraste con el fondo. */
+    padding: 15px 20px; /* Añade espacio interno alrededor del contenido del encabezado. */
+    text-align: center; /* Centra el texto del encabezado. */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen superior e inferior del título principal. */
+    font-size: 2.5rem; /* Establece el tamaño de la fuente del título principal. */
+    padding: 10px 20px;
+    text-align: center;
+    color: #00bfff;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos o números de la lista de navegación. */
+    padding: 0; /* Elimina el relleno interno de la lista. */
+    margin: 0; /* Elimina los márgenes alrededor de la lista. */
+    display: flex; /* Hace que los elementos de la lista se organicen en línea. */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente. */
+    gap: 5px; /* Espaciado entre los elementos de la lista. */
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 20px; /* Añade espacio horizontal entre los elementos del menú. */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
+    color: #ffffff; /* Color de texto blanco. */
+    font-weight: bold; /* Resalta los enlaces con texto en negrita. */
+    padding: 5px 10px; /* Espaciado interno en los enlaces. */
+    border-radius: 4px; /* Bordes redondeados para los enlaces. */
+    transition: background-color 0.7s; /* Suaviza el cambio de color de fondo (opcional). */
+}
+
+nav ul li a:hover {
+    background-color: #00bfff; /* Fondo azul claro al pasar el cursor. */
+    color: #000; /* Cambia el color del texto a negro. */
+}
+
+main {
+    padding-top: 120px;
+    min-height: calc(100vh - 160px - 50px);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Secciones */
+section {
+    margin: 20px auto; /* Añade espacio superior e inferior y centra horizontalmente. */
+    padding: 50px; /* Añade espacio interno alrededor del contenido de las secciones. */
+    max-width: 1000px; /* Limita el ancho máximo de las secciones a 900px. */
+    background-color: #ffffff; /* Fondo blanco para las secciones. */
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación. */
+    margin-bottom: 20px; /* Espaciado entre secciones. */
+}
+
+section h2 {
+    border-bottom: 2px solid #003366; /* Línea azul debajo de los títulos de las secciones. */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea inferior. */
+    color: #003366; /* Color azul fuerte para los títulos de las secciones. */
+}
+
+section p, section ul {
+    margin: 15px 0; /* Añade espacio vertical alrededor de los párrafos y listas. */
+}
+
+/* Listas */
+ul {
+    padding-left: 20px; /* Añade sangría a las listas para mayor claridad. */
+}
+
+ul li {
+    margin-bottom: 10px; /* Añade espacio entre los elementos de las listas. */
+}
+
+/* Sección Hoteles */
+.contenedor {
+    display: block; /* Cambiado a flex para mejor organización */
+    /*flex-direction: column;  Organiza los elementos en columna */
+    align-items: center;
+    gap: 20px; /* Espaciado uniforme entre elementos */
+    /*flex: auto;  Ajusta el tamaño de los elementos según el contenido */
+    //flex-wrap: wrap;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.contenedor h2 {
+    border-bottom: 2px solid #003366; /* Línea azul debajo de los títulos de las secciones. */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea inferior. */
+    color: #003366; /* Color azul fuerte para los títulos de las secciones. */
+    text-align: center;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    flex: auto;
+}
+
+.objetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: auto; /* Ajusta el tamaño de los elementos según el contenido */
+    padding: 15px; /* Añade espacio interno alrededor de los objetos */
+    background-color: #f9f9f9; /* Fondo gris claro para los objetos */
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación */
+}
+
+.objetos img {
+    border: 2px solid #003366; /* Borde azul para las imágenes */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    max-width: 200px; /* Limita el ancho máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación */
+    transition: transform 0.3s; /* Añade una transición suave al efecto hover */
+}
+
+.objetos img:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón sobre la imagen */
+}
+
+/* Sección Galería */
+section#galeria div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px; /* Añade espacio interno alrededor de la galería */
+    background-color: #f0f0f0; /* Fondo gris claro para la sección de galería */
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+}
+
+section#galeria img {
+    border: 2px solid #003366;
+    border-radius: 8px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Añade una transición suave al efecto hover */
+}
+
+section#galeria img:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón sobre la imagen */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+} 
+
+.contact-container {
+    display: flex; /* Cambiado a flex para mejor organización */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center;
+    gap: 20px; /* Espaciado uniforme entre elementos */
+    flex: auto; /* Ajusta el tamaño de los elementos según el contenido */
+    flex-wrap: wrap;
+}
+
+/* Pie de página */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.container table { 
+    border-collapse: collapse; /* Elimina bordes dobles */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.container h2 {
+    border-bottom: 2px solid #003366; /* Línea azul debajo de los títulos de las secciones. */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea inferior. */
+    color: #003366; /* Color azul fuerte para los títulos de las secciones. */
+    text-align: center;
+}
+
+/* Estilo para las celdas de encabezado y datos */
+th, td { 
+    border: 1px solid #ddd; /* Borde alrededor de cada celda */
+    padding: 8px; /* Espaciado interno */
+    text-align: center; /* Texto centrado */
+}
+
+/* Fondo gris claro para las celdas del encabezado */
+th { 
+    background-color: #004a8f; 
+    color: #f0f8ff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button {
+    width: 25%;
+    background-color: #004a8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+    color: white;
+}
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+.botoneliminar {
+    width: 75%;
+    background-color: #004a8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botoneliminar:hover {
+    background-color: red;
+}
+
+.botonactualizar {
+    width: 75%;
+    background-color: #004a8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.botonactualizar:hover {
+    background-color: green;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+form {
+    background-color: white;
+    padding: 50px;
+    margin: 20px 0;
+    border-radius: 8px;
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Título del formulario */
+form h1 {
+    text-align: center; /* Centra el texto del título. */
+    color: #004a8f; /* Azul oscuro para resaltar. */
+    margin-bottom: 20px; /* Espaciado inferior para separar del formulario. */
+}
+    
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor. */
+    padding: 10px; /* Espaciado interno para comodidad al escribir. */
+    margin-bottom: 15px; /* Espaciado inferior entre los campos. */
+    border: 1px solid #ccc; /* Borde gris claro. */
+    border-radius: 5px; /* Bordes redondeados. */
+    font-size: 16px; /* Tamaño de texto estándar. */
+}
+
+form button {
+    width: 105%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #004a8f;
+}
+
+form button[type="button"] {
+    background-color: #f44336;
+}
+
+form button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+form button:hover {
+    background-color: #005c05;
+}
+
+/* Estilo para la tabla de detalles y botones adicionales */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-group button {
+    background-color: #008CBA;
+    color: white;
+}
+
+.btn-group button:hover {
+    background-color: #007B8C;
+}
+
+/* Estilo para el mensaje de error/success */
+.alert {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Estilo para la actualización de reserva */
+form.update-form {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.update-form input,
+.update-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.update-form button {
+    width: 105%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.update-form button:hover {
+    background-color: #45a049;
+}
+
+.update-form button[type="button"] {
+    background-color: #f44336;
+}
+
+.update-form button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+.contact-section {
+    display: block; /* Cambiado a flex para mejor organización */
+    gap: 20px; /* Espaciado uniforme entre elementos */
+}
+
+
+@media only screen and (max-width: 850px) {
+    .contact-section {
+        display: block; /* Cambiado a bloque para mejor manejo en pantallas pequeñas */
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+    .contact-container {    
+        display: block; /* Cambiado a bloque para mejor manejo en pantallas pequeñas */
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+    .container {
+        display: block; /* Cambiado a bloque para mejor manejo en pantallas pequeñas */
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+    .container table {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 10px; /* Espaciado inferior para separar los detalles y botones adicionales */
+        border-collapse: collapse; /* Combina las líneas de borde en una sola */
+        text-align: left; /* Alinea el texto a la izquierda en las celdas */
+        font-size: 14px; /* Tamaño de fuente reducido para mejor visualización en pantallas pequeñas */
+    }   
+    .container table th, .container table td {
+        padding: 3px; /* Espaciado uniforme en celdas para mejor visualización */
+    }
+    .container table tr {
+        transition: background-color 0.3s ease; /* Efecto de transición en el color de fondo */
+        cursor: pointer; /* Cursor en forma de puntero al pasar el mouse por encima */
+    }
+    .container table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Color de fondo alternativo en celdas pares */
+        border-bottom: 1px solid #ddd; /* Borde inferior en celdas pares */
+    }
+    .botoneliminar {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        background-color: #004a8f; /* Fondo azul oscuro para el botón */
+        color: white; /* Texto blanco para contraste */
+        border: none; /* Sin borde alrededor del botón */
+        padding: 10px 20px; /* Espaciado interno del botón */
+        cursor: pointer; /* Cursor en forma de puntero al pasar el mouse por encima */
+        border-radius: 5px; /* Bordes redondeados para un diseño moderno */
+        font-size: 14px; /* Tamaño de fuente del texto */
+    }
+    .botoneliminar:hover {
+        background-color: red; /* Color de fondo rojo al pasar el mouse sobre el botón */
+    }
+    .botonactualizar {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        background-color: #004a8f; /* Fondo azul oscuro para el botón */
+        color: white; /* Texto blanco para contraste */
+        border: none; /* Sin borde alrededor del botón */
+        padding: 10px 20px; /* Espaciado interno del botón */
+        cursor: pointer; /* Cursor en forma de puntero al pasar el mouse por encima */
+        border-radius: 5px; /* Bordes redondeados para un diseño moderno */
+        font-size: 14px; /* Tamaño de fuente del texto */
+    }
+    .botonactualizar:hover {
+        background-color: #005c05; /* Color de fondo verde al pasar el mouse sobre el botón */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .contact-section {
+        display: block; /* Cambiado a bloque para mejor manejo en pantallas superpequeñas */
+        flex-direction: column; /* Cambia a columna en pantallas superpequeñas */
+    }
+
+    .contact-container {    
+        display: block; /* Cambiado a bloque para mejor manejo en pantallas superpequeñas */
+        flex-direction: column; /* Cambia a columna en pantallas superpequeñas */
+    }
+
+    .container {
+        display: block; /* Cambiado a bloque para mejor manejo en pantallas superpequeñas */
+        flex-direction: column; /* Cambia a columna en pantallas superpequeñas */
+    }   
+
+    .container table {
+        flex-direction: column; /*  Cambia a columna en pantallas de 450px o menos */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 5px; /* Espaciado inferior para separar los detalles y botones adicionales */
+        border-collapse: collapse; /* Combina las líneas de borde en una sola */
+        text-align: left; /* Alinea el texto a la izquierda en las celdas */
+        font-size: 12px; /* Tamaño de fuente reducido para mejor visualización en pantallas muy pequeñas */
+    }
+
+    .container table th, .container table td {
+        padding: 2px; /* Espaciado uniforme en celdas para mejor visualización */
+    }
+
+    .container table tr {
+        transition: background-color 0.3s ease; /* Efecto de transición en el color de fondo */
+        cursor: pointer; /* Cursor en forma de puntero al pasar el mouse por encima */
+    }
+
+    .container table tr:nth-child(even) {
+        background-color: #f2f2f2; /* Color de fondo alternativo en celdas pares */
+        border-bottom: 1px solid #ddd; /* Borde inferior en celdas pares */
+    }
+
+    .botoneliminar {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        background-color: #004a8f; /* Fondo azul oscuro para el botón */
+        color: white; /* Texto blanco para contraste */
+        border: none; /* Sin borde alrededor del botón */
+        padding: 8px 16px; /* Espaciado interno del botón */
+        cursor: pointer; /* Cursor en forma de puntero al pasar el mouse por encima */
+        font-size: 12px; /* Tamaño de fuente del texto */
+    }
+
+    .botoneliminar:hover {
+        background-color: red; /* Color de fondo rojo al pasar el mouse sobre el botón */
+    }
+
+    .botonactualizar {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        background-color: #004a8f; /* Fondo azul oscuro para el botón */
+        color: white; /* Texto blanco para contraste */
+        border: none; /* Sin borde alrededor del botón */
+        padding: 8px 16px; /* Espaciado interno del botón */
+        cursor: pointer; /* Cursor en forma de puntero al pasar el mouse por encima */
+        font-size: 12px; /* Tamaño de fuente del texto */
+    }
+
+    .botonactualizar:hover {
+        background-color: #005c05; /* Color de fondo verde al pasar el mouse sobre el botón */
+    }
+}
