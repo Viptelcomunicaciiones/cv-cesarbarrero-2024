@@ -4,20 +4,17 @@ body {
     margin: 0; /* Elimina los márgenes alrededor de la página. */
     padding: 0; /* Elimina los rellenos alrededor de la página. */
     background-color: #f0f8ff; /* Fondo azul claro para toda la página. */
-    color: #002147; /* Texto azul oscuro para facilitar la lectura. */
+    color: #26252d; /* Texto azul oscuro para facilitar la lectura. */
 }
 
 /* Encabezado */
 header {
-    background-color: #003366; /* Fondo azul fuerte para el encabezado. */
-    color: #ffffff; /* Texto blanco para contraste con el fondo. */
-    padding: 15px 20px; /* Añade espacio interno alrededor del contenido del encabezado. */
     text-align: center; /* Centra el texto del encabezado. */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #003366;
+    background-color: #26252d;
     color: #ffffff;
     padding: 15px 20px;
     display: flex;
@@ -78,7 +75,7 @@ main {
 /* Secciones */
 section {
     margin: 20px auto; /* Añade espacio superior e inferior y centra horizontalmente. */
-    padding: 50px; /* Añade espacio interno alrededor del contenido de las secciones. */
+    padding: 20px; /* Añade espacio interno alrededor del contenido de las secciones. */
     max-width: 1000px; /* Limita el ancho máximo de las secciones a 900px. */
     background-color: #ffffff; /* Fondo blanco para las secciones. */
     border-radius: 8px; /* Bordes redondeados para un diseño moderno. */
@@ -89,11 +86,12 @@ section {
 section h2 {
     border-bottom: 2px solid #003366; /* Línea azul debajo de los títulos de las secciones. */
     padding-bottom: 5px; /* Espacio entre el texto y la línea inferior. */
-    color: #003366; /* Color azul fuerte para los títulos de las secciones. */
+    color: #26252d; /* Color azul fuerte para los títulos de las secciones. */
 }
 
 section p, section ul {
     margin: 15px 0; /* Añade espacio vertical alrededor de los párrafos y listas. */
+    color: #333; /* Color de texto gris oscuro para una mejor legibilidad. */
 }
 
 /* Listas */
@@ -103,6 +101,7 @@ ul {
 
 ul li {
     margin-bottom: 10px; /* Añade espacio entre los elementos de las listas. */
+    color: #333; /* Color*/
 }
 
 /* Sección Hoteles */
@@ -119,7 +118,7 @@ ul li {
 .contenedor h2 {
     border-bottom: 2px solid #003366; /* Línea azul debajo de los títulos de las secciones. */
     padding-bottom: 5px; /* Espacio entre el texto y la línea inferior. */
-    color: #003366; /* Color azul fuerte para los títulos de las secciones. */
+    color: #26252d; /* Color azul fuerte para los títulos de las secciones. */
     text-align: center;
 }
 
@@ -140,9 +139,9 @@ ul li {
     gap: 10px;
     flex: auto; /* Ajusta el tamaño de los elementos según el contenido */
     padding: 15px; /* Añade espacio interno alrededor de los objetos */
-    background-color: #f9f9f9; /* Fondo gris claro para los objetos */
+    /*background-color: #f9f9f9;  Fondo gris claro para los objetos */
     border-radius: 8px; /* Bordes redondeados para un diseño moderno */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  Sombra suave para un efecto de elevación */
 }
 
 .objetos img {
@@ -160,17 +159,17 @@ ul li {
 }
 
 /* Sección Galería */
-section#galeria div {
+section#galeria-lenguajes div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 15px;
     padding: 10px; /* Añade espacio interno alrededor de la galería */
-    background-color: #f0f0f0; /* Fondo gris claro para la sección de galería */
+    /*background-color: #f0f0f0;  Fondo gris claro para la sección de galería */
     border-radius: 8px; /* Bordes redondeados para un diseño más suave */
 }
 
-section#galeria img {
+section#galeria-lenguajes img {
     border: 2px solid #003366;
     border-radius: 8px;
     width: 200px;
@@ -179,7 +178,7 @@ section#galeria img {
     transition: transform 0.3s; /* Añade una transición suave al efecto hover */
 }
 
-section#galeria img:hover {
+section#galeria-lenguajes img:hover {
     transform: scale(1.05); /* Efecto de aumento al pasar el ratón sobre la imagen */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
 } 
@@ -195,7 +194,7 @@ section#galeria img:hover {
 
 /* Pie de página */
 footer {
-    background-color: #003366;
+    background-color: #26252d;
     color: #ffffff;
     text-align: center;
     padding: 15px;
@@ -242,7 +241,7 @@ table tr:nth-child(even) {
 
 button {
     width: 25%;
-    background-color: #004a8f;
+    background-color: #1e213d;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -252,7 +251,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #1b5583;
     color: white;
 }
 button a {
@@ -297,7 +296,7 @@ button:disabled {
 
 form {
     background-color: white;
-    padding: 50px;
+    //padding: 50px;
     margin: 20px 0;
     border-radius: 8px;
     // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -309,7 +308,7 @@ form {
 /* Título del formulario */
 form h1 {
     text-align: center; /* Centra el texto del título. */
-    color: #004a8f; /* Azul oscuro para resaltar. */
+    color: #26252d; /* Azul oscuro para resaltar. */
     margin-bottom: 20px; /* Espaciado inferior para separar del formulario. */
 }
     
@@ -339,7 +338,7 @@ form button {
     font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #004a8f;
+    background-color: #26252d;
 }
 
 form button[type="button"] {
@@ -434,6 +433,87 @@ form.update-form {
     gap: 20px; /* Espaciado uniforme entre elementos */
 }
 
+/* Botón del chatbot */
+#chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00bfff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra la imagen */
+}
+
+#chatbot-button img {
+    width: 70%; /* Ajusta el tamaño de la imagen dentro del botón */
+    height: 70%;
+    object-fit: contain;
+    border-radius: 50%; /* Opcional si deseas que la imagen se vea circular */
+}
+
+/* Contenedor del chatbot */
+#chatbot-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+/* Header del chatbot */
+#chatbot-container .chatbot-header {
+    background-color: #26252d;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Cuerpo del chatbot */
+#chatbot-container .chatbot-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Input del chatbot */
+#chatbot-container .chatbot-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#chatbot-container .chatbot-footer input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#chatbot-container .chatbot-footer button {
+    background-color: #26252d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 850px) {
     .contact-section {
