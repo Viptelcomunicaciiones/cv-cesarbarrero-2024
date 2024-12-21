@@ -158,6 +158,22 @@ ul li {
     transform: scale(1.05); /* Efecto de aumento al pasar el ratón sobre la imagen */
 }
 
+.fotos {
+    border: 2px solid #003366; /* Borde azul para las imágenes */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    max-width: 200px; /* Limita el ancho máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación */
+    transition: transform 0.3s; /* Añade una transición suave al efecto hover */
+    align-content: center;
+}
+
+.fotos:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón sobre la imagen */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
 /* Sección Galería */
 section#galeria-lenguajes div {
     display: flex;
